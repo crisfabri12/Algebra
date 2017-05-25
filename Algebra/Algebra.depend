@@ -1,0 +1,366 @@
+# depslib dependency file v1.0
+1495702063 source:c:\users\cristhian ocola\desktop\algebra\main.cpp
+	<iostream>
+	<NTL/ZZ.h>
+	<string>
+	<Cesar.h>
+	<Afin.h>
+	"RSA.h"
+	<fstream>
+	"GA.h"
+	<time.h>
+	"Funciones Matematicas.h"
+
+1492654966 source:c:\users\cristhian ocola\desktop\algebra\src\afin.cpp
+	"Afin.h"
+	<stdlib.h>
+
+1492654966 c:\users\cristhian ocola\desktop\algebra\include\afin.h
+	<iostream>
+	<time.h>
+
+1492658794 source:c:\users\cristhian ocola\desktop\algebra\src\cesar.cpp
+	"Cesar.h"
+
+1492658794 c:\users\cristhian ocola\desktop\algebra\include\cesar.h
+	<stdlib.h>
+	<iostream>
+
+1492667440 source:c:\users\cristhian ocola\desktop\algebra\src\rutas.cpp
+	"Rutas.h"
+
+1492655626 c:\users\cristhian ocola\desktop\algebra\include\rutas.h
+	<iostream>
+	<time.h>
+
+1494476420 source:c:\users\cristhian ocola\desktop\universidad\algebra\main.cpp
+	<iostream>
+	<NTL/ZZ.h>
+	<string>
+	<Cesar.h>
+	<Afin.h>
+	"RSA.h"
+	"GA.h"
+	<time.h>
+	"Funciones int.h"
+	<iostream>
+
+1492655625 c:\users\cristhian ocola\desktop\universidad\algebra\include\rutas.h
+	<iostream>
+	<time.h>
+
+1492654964 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\afin.cpp
+	"Afin.h"
+	<stdlib.h>
+
+1492654964 c:\users\cristhian ocola\desktop\universidad\algebra\include\afin.h
+	<iostream>
+	<time.h>
+
+1492658792 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\cesar.cpp
+	"Cesar.h"
+
+1492658792 c:\users\cristhian ocola\desktop\universidad\algebra\include\cesar.h
+	<stdlib.h>
+	<iostream>
+
+1492667438 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\rutas.cpp
+	"Rutas.h"
+
+1494475858 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\funciones matematicas.cpp
+	"Funciones Matematicas.h"
+	<NTL/ZZ.h>
+
+1494036799 c:\users\cristhian ocola\desktop\universidad\algebra\include\funciones matematicas.h
+	<vector>
+	<NTL/ZZ.h>
+
+1494037047 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\ga.cpp
+	"GA.h"
+	<iostream>
+	<time.h>
+	<vector>
+	<stdlib.h>
+	<math.h>
+
+1494037047 c:\users\cristhian ocola\desktop\universidad\algebra\include\ga.h
+	<vector>
+	<NTL/ZZ.h>
+
+1494037197 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\rsa.cpp
+	"RSA.h"
+	"GA.h"
+	<iostream>
+	<NTL/ZZ.h>
+	"Funciones Matematicas.h"
+
+1494037134 c:\users\cristhian ocola\desktop\universidad\algebra\include\rsa.h
+	<string>
+	<NTL/ZZ.h>
+	<vector>
+
+1494476442 source:c:\users\cristhian ocola\desktop\universidad\algebra\src\funciones int.cpp
+	"Funciones int.h"
+	<iostream>
+
+1494476420 c:\users\cristhian ocola\desktop\universidad\algebra\include\funciones int.h
+	<vector>
+
+1492654966 source:g:\algebra\src\afin.cpp
+	"Afin.h"
+	<stdlib.h>
+
+1492654966 g:\algebra\include\afin.h
+	<iostream>
+	<time.h>
+
+1492658794 source:g:\algebra\src\cesar.cpp
+	"Cesar.h"
+
+1492658794 g:\algebra\include\cesar.h
+	<stdlib.h>
+	<iostream>
+
+1494476444 source:g:\algebra\src\funciones int.cpp
+	"Funciones int.h"
+	<iostream>
+
+1494476422 g:\algebra\include\funciones int.h
+	<vector>
+
+1494475860 source:g:\algebra\src\funciones matematicas.cpp
+	"Funciones Matematicas.h"
+	<NTL/ZZ.h>
+
+1494036800 g:\algebra\include\funciones matematicas.h
+	<vector>
+	<NTL/ZZ.h>
+
+1494037048 source:g:\algebra\src\ga.cpp
+	"GA.h"
+	<iostream>
+	<time.h>
+	<vector>
+	<stdlib.h>
+	<math.h>
+
+1494037048 g:\algebra\include\ga.h
+	<vector>
+	<NTL/ZZ.h>
+
+1494037198 source:g:\algebra\src\rsa.cpp
+	"RSA.h"
+	"GA.h"
+	<iostream>
+	<NTL/ZZ.h>
+	"Funciones Matematicas.h"
+
+1494037136 g:\algebra\include\rsa.h
+	<string>
+	<NTL/ZZ.h>
+	<vector>
+
+1492667440 source:g:\algebra\src\rutas.cpp
+	"Rutas.h"
+
+1492655626 g:\algebra\include\rutas.h
+	<iostream>
+	<time.h>
+
+1495132440 source:g:\algebra\main.cpp
+	<iostream>
+	<NTL/ZZ.h>
+	<string>
+	<Cesar.h>
+	<Afin.h>
+	"RSA.h"
+	"GA.h"
+	<time.h>
+	<iostream>
+
+1494524090 source:c:\users\alumno-a\desktop\algebra\main.cpp
+	<iostream>
+	<NTL/ZZ.h>
+	<string>
+	<Cesar.h>
+	<Afin.h>
+	"RSA.h"
+	"GA.h"
+	<time.h>
+	"Funciones int.h"
+	<iostream>
+
+1492658794 c:\users\alumno-a\desktop\algebra\include\cesar.h
+	<stdlib.h>
+	<iostream>
+
+1492654966 c:\users\alumno-a\desktop\algebra\include\afin.h
+	<iostream>
+	<time.h>
+
+1494037136 c:\users\alumno-a\desktop\algebra\include\rsa.h
+	<string>
+	<NTL/ZZ.h>
+	<vector>
+
+1494037048 c:\users\alumno-a\desktop\algebra\include\ga.h
+	<vector>
+	<NTL/ZZ.h>
+
+1494476422 c:\users\alumno-a\desktop\algebra\include\funciones int.h
+	<vector>
+
+1492654966 source:c:\users\alumno-a\desktop\algebra\src\afin.cpp
+	"Afin.h"
+	<stdlib.h>
+
+1492658794 source:c:\users\alumno-a\desktop\algebra\src\cesar.cpp
+	"Cesar.h"
+
+1494037048 source:c:\users\alumno-a\desktop\algebra\src\ga.cpp
+	"GA.h"
+	<iostream>
+	<time.h>
+	<vector>
+	<stdlib.h>
+	<math.h>
+
+1494037198 source:c:\users\alumno-a\desktop\algebra\src\rsa.cpp
+	"RSA.h"
+	"GA.h"
+	<iostream>
+	<NTL/ZZ.h>
+	"Funciones Matematicas.h"
+
+1494036800 c:\users\alumno-a\desktop\algebra\include\funciones matematicas.h
+	<vector>
+	<NTL/ZZ.h>
+
+1492667440 source:c:\users\alumno-a\desktop\algebra\src\rutas.cpp
+	"Rutas.h"
+
+1492655626 c:\users\alumno-a\desktop\algebra\include\rutas.h
+	<iostream>
+	<time.h>
+
+1494525717 source:c:\users\alumno-a\desktop\algebra\src\funciones int.cpp
+	"Funciones int.h"
+	<math.h>
+	<iostream>
+
+1495672754 source:h:\algebra\main.cpp
+	<iostream>
+	<NTL/ZZ.h>
+	<string>
+	<Cesar.h>
+	<Afin.h>
+	"RSA.h"
+	"GA.h"
+	<time.h>
+	"Funciones int.h"
+
+1492658794 h:\algebra\include\cesar.h
+	<stdlib.h>
+	<iostream>
+
+1492654966 h:\algebra\include\afin.h
+	<iostream>
+	<time.h>
+
+1494037136 h:\algebra\include\rsa.h
+	<string>
+	<NTL/ZZ.h>
+	<vector>
+
+1494037048 h:\algebra\include\ga.h
+	<vector>
+	<NTL/ZZ.h>
+
+1492654966 source:h:\algebra\src\afin.cpp
+	"Afin.h"
+	<stdlib.h>
+
+1492658794 source:h:\algebra\src\cesar.cpp
+	"Cesar.h"
+
+1495672604 source:h:\algebra\src\funciones matematicas.cpp
+	"Funciones Matematicas.h"
+	<NTL/ZZ.h>
+	"GA.h"
+
+1494036800 h:\algebra\include\funciones matematicas.h
+	<vector>
+	<NTL/ZZ.h>
+
+1494037048 source:h:\algebra\src\ga.cpp
+	"GA.h"
+	<iostream>
+	<time.h>
+	<vector>
+	<stdlib.h>
+	<math.h>
+
+1494037198 source:h:\algebra\src\rsa.cpp
+	"RSA.h"
+	"GA.h"
+	<iostream>
+	<NTL/ZZ.h>
+	"Funciones Matematicas.h"
+
+1492667440 source:h:\algebra\src\rutas.cpp
+	"Rutas.h"
+
+1492655626 h:\algebra\include\rutas.h
+	<iostream>
+	<time.h>
+
+1495672610 source:h:\algebra\src\funciones int.cpp
+	"Funciones int.h"
+	<math.h>
+	<iostream>
+
+1494476422 h:\algebra\include\funciones int.h
+	<vector>
+
+1495700000 c:\users\cristhian ocola\desktop\algebra\include\rsa.h
+	<string>
+	<NTL/ZZ.h>
+	<vector>
+	"Funciones Matematicas.h"
+
+1495695510 c:\users\cristhian ocola\desktop\algebra\include\ga.h
+	<vector>
+	<NTL/ZZ.h>
+
+1495675232 c:\users\cristhian ocola\desktop\algebra\include\funciones int.h
+	<vector>
+
+1495687752 source:c:\users\cristhian ocola\desktop\algebra\src\funciones int.cpp
+
+1495690647 source:c:\users\cristhian ocola\desktop\algebra\src\funciones matematicas.cpp
+	"Funciones Matematicas.h"
+	<NTL/ZZ.h>
+	"GA.h"
+	<vector>
+
+1495688928 c:\users\cristhian ocola\desktop\algebra\include\funciones matematicas.h
+	<vector>
+	<NTL/ZZ.h>
+
+1495695510 source:c:\users\cristhian ocola\desktop\algebra\src\ga.cpp
+	"GA.h"
+	<iostream>
+	<time.h>
+	<vector>
+	<stdlib.h>
+	<math.h>
+
+1495702379 source:c:\users\cristhian ocola\desktop\algebra\src\rsa.cpp
+	"RSA.h"
+	"GA.h"
+	<iostream>
+	<stdlib.h>
+	<NTL/ZZ.h>
+	<sstream>
+	"Funciones Matematicas.h"
+
