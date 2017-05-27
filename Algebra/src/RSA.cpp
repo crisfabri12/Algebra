@@ -8,12 +8,12 @@
 using namespace NTL;
 using namespace std;
 
-string zzToString(ZZ z) {
+string RSA::zzToString(ZZ z) {
     stringstream buffer;
     buffer << z;
     return buffer.str();
 }
-ZZ stringTozz(string str){
+ZZ RSA::stringTozz(string str){
     ZZ number(INIT_VAL, str.c_str());
     return number;
 }
@@ -71,12 +71,12 @@ RSA::RSA(ZZ e, ZZ n) //EMISOR
 {
     e = e;
     N = n;
-    alfabeto = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 *";
+    alfabeto = "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789.,;:-_()@{}+/";
 }
 RSA::RSA(int bits) //RECEPTOR
 {
     generar_claves(bits);
-    alfabeto = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 *";
+    alfabeto = "abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789.,;:-_()@{}+/";
 }
 ZZ RSA::get_N()
 {
@@ -182,15 +182,24 @@ string RSA::cifrar(string mensaje)
     }
     return original;
 }
-void RSA::set_clavepublica(ZZ x)
-{
-    this->e = x;
+void RSA::set_p(ZZ a){
+    this -> p = a;
 }
-void RSA::set_claveprivada(ZZ x){
-    this->d = x;
+
+void RSA::set_q(ZZ b){
+    this -> q = b;
 }
-void RSA::set_N(ZZ x){
-    this->N = x;
+
+void RSA::set_N(ZZ c){
+    this -> N = c;
+}
+
+void RSA::set_d(ZZ x){
+    this -> d = x;
+}
+
+void RSA::set_e(ZZ y){
+    this -> e = y;
 }
 
 ZZ RSA::resto_chino(ZZ c){

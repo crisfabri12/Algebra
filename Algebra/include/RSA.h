@@ -16,11 +16,15 @@ class RSA
         ZZ get_clave_publica();
         string cifrar(std::string mensaje);
         string descifrar(string mensaje);
-        void set_clavepublica(ZZ x);
-        void set_claveprivada(ZZ x);
+        ZZ stringTozz(string str);
+        string zzToString(ZZ z);
+        void set_p(ZZ a);
+        void set_q(ZZ b);
+        void set_N(ZZ c);
+        void set_d(ZZ x);
+        void set_e(ZZ y);
         ZZ resto_chino(ZZ c);
         ZZ exponenciacion(ZZ base,ZZ exp);
-        void set_N(ZZ x);
     private:
         std::string alfabeto;
         ZZ d;
