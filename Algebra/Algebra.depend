@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1495702063 source:c:\users\cristhian ocola\desktop\algebra\main.cpp
+1496906836 source:c:\users\cristhian ocola\desktop\algebra\main.cpp
 	<iostream>
 	<NTL/ZZ.h>
 	<string>
@@ -8,6 +8,7 @@
 	"RSA.h"
 	<fstream>
 	"GA.h"
+	"gramal.h"
 	<time.h>
 	"Funciones Matematicas.h"
 
@@ -322,7 +323,7 @@
 1494476422 h:\algebra\include\funciones int.h
 	<vector>
 
-1495700000 c:\users\cristhian ocola\desktop\algebra\include\rsa.h
+1496904403 c:\users\cristhian ocola\desktop\algebra\include\rsa.h
 	<string>
 	<NTL/ZZ.h>
 	<vector>
@@ -337,14 +338,20 @@
 
 1495687752 source:c:\users\cristhian ocola\desktop\algebra\src\funciones int.cpp
 
-1495690647 source:c:\users\cristhian ocola\desktop\algebra\src\funciones matematicas.cpp
+1496893768 source:c:\users\cristhian ocola\desktop\algebra\src\funciones matematicas.cpp
 	"Funciones Matematicas.h"
 	<NTL/ZZ.h>
 	"GA.h"
 	<vector>
 
-1495688928 c:\users\cristhian ocola\desktop\algebra\include\funciones matematicas.h
+1496893768 c:\users\cristhian ocola\desktop\algebra\include\funciones matematicas.h
 	<vector>
+	<string>
+	"GA.h"
+	<iostream>
+	<stdlib.h>
+	<NTL/ZZ.h>
+	<sstream>
 	<NTL/ZZ.h>
 
 1495695510 source:c:\users\cristhian ocola\desktop\algebra\src\ga.cpp
@@ -355,7 +362,7 @@
 	<stdlib.h>
 	<math.h>
 
-1495702379 source:c:\users\cristhian ocola\desktop\algebra\src\rsa.cpp
+1496904277 source:c:\users\cristhian ocola\desktop\algebra\src\rsa.cpp
 	"RSA.h"
 	"GA.h"
 	<iostream>
@@ -364,47 +371,8 @@
 	<sstream>
 	"Funciones Matematicas.h"
 
-1495851870 source:c:\users\cristhian ocola\desktop\algebra-master\algebra\src\afin.cpp
-	"Afin.h"
-	<stdlib.h>
-
-1495851870 c:\users\cristhian ocola\desktop\algebra-master\algebra\include\afin.h
-	<iostream>
-	<time.h>
-
-1495851870 source:c:\users\cristhian ocola\desktop\algebra-master\algebra\src\cesar.cpp
-	"Cesar.h"
-
-1495851870 c:\users\cristhian ocola\desktop\algebra-master\algebra\include\cesar.h
-	<stdlib.h>
-	<iostream>
-
-1495851870 source:c:\users\cristhian ocola\desktop\algebra-master\algebra\src\funciones int.cpp
-
-1495851870 source:c:\users\cristhian ocola\desktop\algebra-master\algebra\src\funciones matematicas.cpp
-	"Funciones Matematicas.h"
-	<NTL/ZZ.h>
-	"GA.h"
-	<vector>
-
-1495851870 c:\users\cristhian ocola\desktop\algebra-master\algebra\include\funciones matematicas.h
-	<vector>
-	<NTL/ZZ.h>
-
-1495851870 c:\users\cristhian ocola\desktop\algebra-master\algebra\include\ga.h
-	<vector>
-	<NTL/ZZ.h>
-
-1495851870 source:c:\users\cristhian ocola\desktop\algebra-master\algebra\src\ga.cpp
-	"GA.h"
-	<iostream>
-	<time.h>
-	<vector>
-	<stdlib.h>
-	<math.h>
-
-1495867294 source:c:\users\cristhian ocola\desktop\algebra-master\algebra\src\rsa.cpp
-	"RSA.h"
+1496906815 source:c:\users\cristhian ocola\desktop\algebra\src\gramal.cpp
+	"gramal.h"
 	"GA.h"
 	<iostream>
 	<stdlib.h>
@@ -412,29 +380,9 @@
 	<sstream>
 	"Funciones Matematicas.h"
 
-1495867294 c:\users\cristhian ocola\desktop\algebra-master\algebra\include\rsa.h
+1496906176 c:\users\cristhian ocola\desktop\algebra\include\gramal.h
 	<string>
 	<NTL/ZZ.h>
 	<vector>
-	"Funciones Matematicas.h"
-
-1495851870 source:c:\users\cristhian ocola\desktop\algebra-master\algebra\src\rutas.cpp
-	"Rutas.h"
-
-1495851870 c:\users\cristhian ocola\desktop\algebra-master\algebra\include\rutas.h
-	<iostream>
-	<time.h>
-
-1495867377 source:c:\users\cristhian ocola\desktop\algebra-master\algebra\main.cpp
-	<iostream>
-	<NTL/ZZ.h>
-	<string>
-	<Cesar.h>
-	<Afin.h>
-	"RSA.h"
-	<fstream>
-	"GA.h"
-	<sstream>
-	<time.h>
 	"Funciones Matematicas.h"
 

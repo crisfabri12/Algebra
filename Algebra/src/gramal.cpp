@@ -1,4 +1,4 @@
-#include "RSA.h"
+#include "gramal.h"
 #include "GA.h"
 #include <iostream>
 #include <stdlib.h>
@@ -8,55 +8,63 @@
 using namespace NTL;
 using namespace std;
 
-
-void RSA::generar_claves(int bits)
+gramal::gramal(ZZ e_1,ZZ e_2,ZZ p,int bits)
 {
-    ZZ p = ga(bits/2,bits,sqrt(bits),11);
-    ZZ q = ga(bits/2,bits,sqrt(bits),11);
+    r = ga(bits/4, bits, 20, 3);
+    while((r < 2) && (r > p - 2))
+    {
+        r = ga(bits/4, bits, 20, 3);;
+    }
+    c  = potencia(e_1, r, p);
+    k = potencia(e_2, r, p);
+    this->p = p;
+    cout<<"c:  "<<c<<endl;
+    cout<<"k:  "<<k<<endl;
+}
+
+
+gramal::gramal(int bits)
+{
+    generar_claves(bits);
+}
+ZZ gramal::raiz_primitiva(ZZ p)
+{
+    ZZ q, g;
+    q = (p - 1)/2;
+    for(int i = 1; i < p - 1; i++)
+    {
+        g = p - i;
+        if((potencia(g, to_ZZ(2), p) != 1) && (potencia(g, q, p) != 1))
+        {
+            break;
+        }
+    }
+    return q;
+}
+
+void gramal::generar_claves(int bits)
+{
+    p = ga(bits/2,bits,sqrt(bits),11);
     while(ProbPrime(p,10)!=1)
     {
         p = ga(bits/2,bits,sqrt(bits),11);
     }
-    while(ProbPrime(q,10)!=1)
+    e_1 = raiz_primitiva(p);
+    d = ga(bits/4, bits, 20, 3);
+    while((d > (p - 2)) && (d < 2))
     {
-        q = ga(bits/2,bits,sqrt(bits),1);
+        d = ga(bits/4, bits, 20, 3);
     }
-    N = p * q;
-    this->p = p;
-    this->q = q;
-    this->N = N;
-    ZZ phi_N =(p-1)*(q-1);
-    ZZ e = ga(bits/2,bits,sqrt(bits),11);
-    while(e > phi_N || euclides(e, phi_N) != 1)
-    {
-        e = ga(bits/2,bits,sqrt(bits),11);
-    }
-    cout <<"Clave publica: " << e << endl;
-    this->e = e;
-    this->d = inversa(e, phi_N);
-    cout << "Clave privada: " << d << endl;
-    cout <<"N: " << N << endl;
+    e_2 = potencia(e_1, d, p);
+    cout<<"p:  "<<p<<endl;
+    cout<<"e_1:  "<<e_1<<endl;
+    cout<<"d:  "<<d<<endl;
+    cout<<"e_2:  "<<e_2<<endl;
+
+
 }
-RSA::RSA(ZZ e, ZZ n) //EMISOR
-{
-    e = e;
-    N = n;
-    alfabeto = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 *";
-}
-RSA::RSA(int bits) //RECEPTOR
-{
-    generar_claves(bits);
-    alfabeto = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 *";
-}
-ZZ RSA::get_N()
-{
-    return N;
-}
-ZZ RSA::get_clave_publica()
-{
-    return e;
-}
-string RSA::cifrar(string mensaje)
+
+string gramal::cifrar(string mensaje)
 {
     string mensaje_cifrado;
     string digito;
@@ -71,10 +79,11 @@ string RSA::cifrar(string mensaje)
             digito+="0";
         digito+= zzToString(to_ZZ(pos));
     }
+
     ZZ tam = to_ZZ(digito.size());
-    ZZ part = to_ZZ((zzToString(N).size())-1);
+    ZZ part = to_ZZ((zzToString(p).size())-1);
     while(modulo(tam,part)!=0){
-        pos = alfabeto.find("*");
+        pos = alfabeto.find("w");
         digito+= zzToString(to_ZZ(pos));
         tam = to_ZZ(digito.size());
     }
@@ -87,8 +96,7 @@ string RSA::cifrar(string mensaje)
             ++j;
         }
         aux_2 = stringTozz(aux);
-        aux_2 = potenciaMod(aux_2,e,N);
-        aux = zzToString(aux_2);
+        aux = zzToString(modulo((aux_2*k),p));
         int a = aux.size();
         while(to_ZZ(a)<part+1)
         {
@@ -101,19 +109,24 @@ string RSA::cifrar(string mensaje)
         aux = "";
         temp = "";
      }
+
     return mensaje_cifrado;
 
 }
 
 
- string RSA::descifrar(string cifrado)
+ string gramal::descifrar(string cifrado)
 {
+    k = potencia(c, d, p);
+    cout<<"c descifrado"<<c<<endl;
+    cout<<"k descifrado"<<k<<endl;
     string original;
     ZZ aux_2;
     string aux;
+    ZZ InversaK = inversa(k, p);
     string digitos;
     int pos = 0;
-    ZZ part = to_ZZ((zzToString(N).size()));
+    ZZ part = to_ZZ((zzToString(p).size()));
     for(int i=0;i<cifrado.size();i+=to_int(part))
     {
         int j=0;
@@ -123,8 +136,7 @@ string RSA::cifrar(string mensaje)
             ++j;
         }
 
-        aux_2 = stringTozz(aux);
-        aux_2 = resto_chino(aux_2);
+        aux_2 = modulo((stringTozz(aux)*InversaK), p);
         aux = zzToString(aux_2);
         int a = aux.size();
         while(to_ZZ(a)<part-1)
@@ -152,27 +164,31 @@ string RSA::cifrar(string mensaje)
     }
     return original;
 }
-void RSA::set_clavepublica(ZZ x)
+ZZ gramal::get_e1()
 {
-    this->e = x;
+    return e_1;
 }
-void RSA::set_claveprivada(ZZ x){
-    this->d = x;
+ZZ gramal::get_e2()
+{
+    return e_2;
 }
-void RSA::set_N(ZZ x){
-    this->N = x;
+ZZ gramal::get_P()
+{
+    return p;
 }
-
-ZZ RSA::resto_chino(ZZ c){
-    ZZ x;
-    ZZ d_1 = modulo(this->d,this->p -1);
-    ZZ d_2 = modulo(this->d,this->q -1);
-    ZZ a_1 = potenciaMod(c,d_1,p);
-    ZZ a_2 = potenciaMod(c,d_2,q);
-    ZZ q_1 = inversa(q,p);
-    ZZ q_2 = inversa(p,q);
-    x = modulo(a_1 * q * q_1,this->N);
-    x+= modulo(a_2 * p * q_2,this->N);
-    return modulo(x,this->N);
+ZZ gramal::get_C1()
+{
+    return c;
 }
-
+void gramal::set_d(ZZ d)
+{
+    this->d = d;
+}
+void gramal::set_P(ZZ P)
+{
+    this->p = p;
+}
+void gramal::set_c(ZZ c)
+{
+    this->c = c;
+}
