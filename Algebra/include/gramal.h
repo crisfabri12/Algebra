@@ -1,17 +1,17 @@
-#ifndef GRAMAL_H
-#define GRAMAL_H
+#ifndef Elgamal_H
+#define Elgamal_H
 #include <string>
 #include <NTL/ZZ.h>
 #include <vector>
 #include "Funciones Matematicas.h"
 using namespace NTL;
 using namespace std;
-class gramal
+class Elgamal
 {
     public:
         void generar_claves(int bits);
-        gramal(int bits);
-        gramal(ZZ e_1,ZZ e_2,ZZ p,int bits);
+        Elgamal(int bits);
+        Elgamal(ZZ e_1,ZZ e_2,ZZ p,int bits);
         string cifrar(std::string mensaje);
         string descifrar(string mensaje);
         ZZ raiz_primitiva(ZZ p);
@@ -22,6 +22,9 @@ class gramal
         void set_d(ZZ d);
         void set_P(ZZ P);
         void set_c(ZZ P);
+        void set_e1(ZZ e1);
+        void set_e2(ZZ e2);
+        void set_k(ZZ k);
     private:
         std::string alfabeto = "0123456789 abcdefghijklmnopqrstuvwxyz.,ABCDEFGHIJKLMNOPQRSTUVWXYZ";;
         ZZ d;
@@ -34,4 +37,4 @@ class gramal
 
 };
 
-#endif // GRAMAL_H
+#endif // Elgamal_H

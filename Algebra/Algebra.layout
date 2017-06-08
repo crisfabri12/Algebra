@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="include\Afin.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="32" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Afin.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="731" topLine="39" />
-		</Cursor>
-	</File>
-	<File name="src\Rutas.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1216" topLine="26" />
-		</Cursor>
-	</File>
 	<File name="include\Cesar.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="319" topLine="0" />
@@ -47,14 +31,34 @@
 			<Cursor1 position="94" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Funciones int.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\gramal.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1627" topLine="114" />
+			<Cursor1 position="696" topLine="8" />
 		</Cursor>
 	</File>
 	<File name="main.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1035" topLine="6" />
+			<Cursor1 position="288" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Afin.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="731" topLine="39" />
+		</Cursor>
+	</File>
+	<File name="src\Cesar.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="131" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Funciones Matematicas.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3203" topLine="148" />
+		</Cursor>
+	</File>
+	<File name="src\Funciones int.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1627" topLine="114" />
 		</Cursor>
 	</File>
 	<File name="src\GA.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -62,29 +66,24 @@
 			<Cursor1 position="15" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Funciones Matematicas.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="512" topLine="13" />
-		</Cursor>
-	</File>
 	<File name="src\RSA.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2197" topLine="61" />
+			<Cursor1 position="338" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Rutas.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1216" topLine="26" />
 		</Cursor>
 	</File>
 	<File name="src\gramal.cpp" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3849" topLine="77" />
+			<Cursor1 position="3847" topLine="180" />
 		</Cursor>
 	</File>
-	<File name="include\gramal.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\Afin.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="606" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Cesar.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="131" topLine="0" />
+			<Cursor1 position="32" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

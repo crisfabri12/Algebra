@@ -386,3 +386,98 @@
 	<vector>
 	"Funciones Matematicas.h"
 
+1496930238 source:c:\users\alumno-a\desktop\algebra-master\algebra\src\afin.cpp
+	"Afin.h"
+	<stdlib.h>
+
+1496930238 c:\users\alumno-a\desktop\algebra-master\algebra\include\afin.h
+	<iostream>
+	<time.h>
+
+1496930238 source:c:\users\alumno-a\desktop\algebra-master\algebra\src\cesar.cpp
+	"Cesar.h"
+
+1496930238 c:\users\alumno-a\desktop\algebra-master\algebra\include\cesar.h
+	<stdlib.h>
+	<iostream>
+
+1496930238 source:c:\users\alumno-a\desktop\algebra-master\algebra\src\funciones int.cpp
+
+1496930238 source:c:\users\alumno-a\desktop\algebra-master\algebra\src\funciones matematicas.cpp
+	"Funciones Matematicas.h"
+	<NTL/ZZ.h>
+	"GA.h"
+	<vector>
+
+1496930238 c:\users\alumno-a\desktop\algebra-master\algebra\include\funciones matematicas.h
+	<vector>
+	<string>
+	"GA.h"
+	<iostream>
+	<stdlib.h>
+	<NTL/ZZ.h>
+	<sstream>
+	<NTL/ZZ.h>
+
+1496930238 c:\users\alumno-a\desktop\algebra-master\algebra\include\ga.h
+	<vector>
+	<NTL/ZZ.h>
+
+1496930238 source:c:\users\alumno-a\desktop\algebra-master\algebra\src\ga.cpp
+	"GA.h"
+	<iostream>
+	<time.h>
+	<vector>
+	<stdlib.h>
+	<math.h>
+
+1496930238 source:c:\users\alumno-a\desktop\algebra-master\algebra\src\rsa.cpp
+	"RSA.h"
+	"GA.h"
+	<iostream>
+	<stdlib.h>
+	<NTL/ZZ.h>
+	<sstream>
+	"Funciones Matematicas.h"
+
+1496930238 c:\users\alumno-a\desktop\algebra-master\algebra\include\rsa.h
+	<string>
+	<NTL/ZZ.h>
+	<vector>
+	"Funciones Matematicas.h"
+
+1496930238 source:c:\users\alumno-a\desktop\algebra-master\algebra\src\rutas.cpp
+	"Rutas.h"
+
+1496930238 c:\users\alumno-a\desktop\algebra-master\algebra\include\rutas.h
+	<iostream>
+	<time.h>
+
+1496944198 source:c:\users\alumno-a\desktop\algebra-master\algebra\main.cpp
+	<iostream>
+	<NTL/ZZ.h>
+	<string>
+	<Cesar.h>
+	<Afin.h>
+	"RSA.h"
+	<fstream>
+	"GA.h"
+	"gramal.h"
+	<time.h>
+	"Funciones Matematicas.h"
+
+1496943439 c:\users\alumno-a\desktop\algebra-master\algebra\include\gramal.h
+	<string>
+	<NTL/ZZ.h>
+	<vector>
+	"Funciones Matematicas.h"
+
+1496944277 source:c:\users\alumno-a\desktop\algebra-master\algebra\src\gramal.cpp
+	"gramal.h"
+	"GA.h"
+	<iostream>
+	<stdlib.h>
+	<NTL/ZZ.h>
+	<sstream>
+	"Funciones Matematicas.h"
+

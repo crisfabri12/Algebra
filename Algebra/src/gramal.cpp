@@ -8,7 +8,7 @@
 using namespace NTL;
 using namespace std;
 
-gramal::gramal(ZZ e_1,ZZ e_2,ZZ p,int bits)
+Elgamal::Elgamal(ZZ e_1,ZZ e_2,ZZ p,int bits)
 {
     r = ga(bits/4, bits, 20, 3);
     while((r < 2) && (r > p - 2))
@@ -23,11 +23,11 @@ gramal::gramal(ZZ e_1,ZZ e_2,ZZ p,int bits)
 }
 
 
-gramal::gramal(int bits)
+Elgamal::Elgamal(int bits)
 {
     generar_claves(bits);
 }
-ZZ gramal::raiz_primitiva(ZZ p)
+ZZ Elgamal::raiz_primitiva(ZZ p)
 {
     ZZ q, g;
     q = (p - 1)/2;
@@ -42,7 +42,7 @@ ZZ gramal::raiz_primitiva(ZZ p)
     return q;
 }
 
-void gramal::generar_claves(int bits)
+void Elgamal::generar_claves(int bits)
 {
     p = ga(bits/2,bits,sqrt(bits),11);
     while(ProbPrime(p,10)!=1)
@@ -64,7 +64,7 @@ void gramal::generar_claves(int bits)
 
 }
 
-string gramal::cifrar(string mensaje)
+string Elgamal::cifrar(string mensaje)
 {
     string mensaje_cifrado;
     string digito;
@@ -115,11 +115,9 @@ string gramal::cifrar(string mensaje)
 }
 
 
- string gramal::descifrar(string cifrado)
+ string Elgamal::descifrar(string cifrado)
 {
     k = potencia(c, d, p);
-    cout<<"c descifrado"<<c<<endl;
-    cout<<"k descifrado"<<k<<endl;
     string original;
     ZZ aux_2;
     string aux;
@@ -164,31 +162,47 @@ string gramal::cifrar(string mensaje)
     }
     return original;
 }
-ZZ gramal::get_e1()
+ZZ Elgamal::get_e1()
 {
     return e_1;
 }
-ZZ gramal::get_e2()
+ZZ Elgamal::get_e2()
 {
     return e_2;
 }
-ZZ gramal::get_P()
+ZZ Elgamal::get_P()
 {
     return p;
 }
-ZZ gramal::get_C1()
+ZZ Elgamal::get_C1()
 {
     return c;
 }
-void gramal::set_d(ZZ d)
+void Elgamal::set_d(ZZ d)
 {
     this->d = d;
 }
-void gramal::set_P(ZZ P)
+void Elgamal::set_P(ZZ P)
 {
     this->p = p;
 }
-void gramal::set_c(ZZ c)
+void Elgamal::set_c(ZZ c)
 {
     this->c = c;
+}
+
+
+
+void Elgamal::set_e1(ZZ e1)
+{
+    this->e_1 = e1;
+}
+
+void Elgamal::set_e2(ZZ e2)
+{
+    this->e_2 = e2;
+}
+void Elgamal::set_k(ZZ k)
+{
+    this->k = k;
 }
